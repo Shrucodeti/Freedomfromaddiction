@@ -8,7 +8,7 @@
       "default_popup": "popup.html"
   },
   "icons": {
-    "64": "rabbit.png"
+    "64": "stopit.png"
   },
   "content_scripts": [ 
     {   "run_at": "document_end",
