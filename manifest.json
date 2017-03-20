@@ -30,7 +30,7 @@
      "alarms",
      "contentSettings",
      "*://twitter.com/*",
-     "*://www.facebook.com/*"
+     "*://www.facebook.com/*",
      "*://www.quora.com/*"
   ]
   
