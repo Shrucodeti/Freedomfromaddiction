@@ -1,6 +1,6 @@
 {
   "name": "Turn-off",
-  "description": "The extension will control your addiction with Quora",
+  "description": "The extension will control your addiction with facebook",
   "manifest_version": 2,
   "version": "0.1",
   "browser_action": {
@@ -13,8 +13,8 @@
   "content_scripts": [ 
     
     {   "run_at": "document_end",
-        "matches": ["*://www.quora.com/*"],
-        "js": ["Quora.js"]
+        "matches": ["*://www.facebook.com/*"],
+        "js": ["facebook.js"]
     }
   ],
   "permissions": [
@@ -22,7 +22,7 @@
      "activeTab",
      "alarms",
      "contentSettings",
-     "*://www.quora.com/*"
+     "*://www.facebook.com/*"
   ]
   
 }
