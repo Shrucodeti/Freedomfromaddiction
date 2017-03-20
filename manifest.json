@@ -1,0 +1,37 @@
+{
+  "name": "Turn-off",
+  "description": "The extension will control your addiction with  facebook and Twitter",
+  "manifest_version": 2,
+  "version": "0.1",
+  "browser_action": {
+      "default_icon": "stopit.png",
+      "default_popup": "popup.html"
+  },
+  "icons": {
+    "64": "rabbit.png"
+  },
+  "content_scripts": [ 
+    {   "run_at": "document_end",
+        "matches": ["*://www.facebook.com/*"],
+        "js": ["facebook.js"]
+    },
+    {   "run_at": "document_end",
+        "matches": ["*://twitter.com/*"],
+        "js": ["Twitter.js"]
+    },
+    {   "run_at": "document_end",
+        "matches": ["*://www.quora.com/*"],
+        "js": ["Quora.js"]
+    }
+  ],
+  "permissions": [
+     "tabs",
+     "activeTab",
+     "alarms",
+     "contentSettings",
+     "*://twitter.com/*",
+     "*://www.facebook.com/*"
+     "*://www.quora.com/*"
+  ]
+  
+}
