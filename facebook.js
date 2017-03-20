@@ -1,6 +1,6 @@
 var timoutWarning = 840000; // Display warning in 14 Mins.
 var timoutNow = 900000; // Timeout in 15 mins.
-var logoutUrl = 'http://quora.com/logout.aspx'; // URL to logout page.
+var logoutUrl = 'http://facebook.com/logout.php'; // URL to logout page.
 
 var warningTimer;
 var timeoutTimer;
